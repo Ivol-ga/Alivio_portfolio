@@ -1,0 +1,36 @@
+@mixin text_h2($_size: 50px, $_color: $primaryGreen) {
+  font-size: $_size;
+  font-weight: 700;
+  color: $_color;
+  line-height: 157%;
+  @media ($desktop) {
+    font-size: 36px;
+  }
+  @media ($tablet) {
+    font-size: 24px;
+  }
+}
+@mixin text_h3($_size: 30px, $_weight: 700, $_color: $black) {
+  font-size: $_size;
+  font-weight: $_weight;
+  color: $_color;
+  font-family: $titleFont;
+  line-height: 150%;
+}
+@mixin text_h4($_size: 24px) {
+  color: $textColor;
+  font-size: $_size;
+  font-weight: 600;
+  line-height: 157%; /* 37.68px */
+}
+@mixin text_p($_size: 20px, $_color: $textColor) {
+  font-size: $_size;
+  font-weight: 500;
+  color: $_color;
+  @media ($desktop) {
+    font-size: 16px;
+  }
+  @media ($tablet) {
+    font-size: 14px;
+  }
+}

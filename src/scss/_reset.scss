@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $mainFont;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $titleFont;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
